@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <link rel = "stylesheet" type = "text/css" href = "style.css">
+        <title>HEALTH ADVISOR</title>
+    </head>
+    <body class="class1">
+        <div class ="heading" >HEALTH ADVISOR</div>
+        <div><img class = "img1" src = "https://www.weightlossresources.co.uk/pimg/wlr/h/how-to-lose-weight-in-6-weeks-article.png">
+           <h1>WELCOME GET REGISTER WITH US ..</h1>
+       </div>
+       <div>
+           <h2>First Name</h2>
+           <input type = "text" name = "firstname"  id = "firstname">
+           <h2>Last Name</h2>
+           <input type = "text" name = "lastname" id = "lastname">
+           <select>
+               <option value = "male">Male</option>
+               <option value = "female">Female</option>
+           </select>
+           <h2>Date of birth</h2>
+           <input type = "date" name = "date of birth" id = "date of birth"><img class = "img1" src = "https://s.abcnews.com/images/Health/gty_woman_scale_weight_loss_jc_140723_12x5_992.jpg">
+           <h2>Email Id</h2>
+           <input type = "text" name = "email" id = "email">
+           <h2>Password</h2>
+           <input type = "text" name = "password" id = "password"><br><br>
+           <button onclick = "healthRegister()" id = "register" class = "find box" >REGISTER</button>
+           </div>
+           <div>
+                <h1 class = "check">CHECK YOUR WEIGHT RESULT HERE...</h1>
+                <label for ="foodIntake">FOOD INTAKE:    </label>
+                 <select id = "foodSelect" class = "sett1 box">
+                        <option value = "Rice">Rice</option>
+                        <option value = "Chapathi">Chapathi</option>
+                        <option value = "Juice">Juice</option>
+                        <option value = "Coffee">Coffee</option>
+                        <option value = "Sweets">Sweets</option>
+                        <option value = "Fruits">Fruits</option>
+                        <option value = "Snacks">Snacks</option>
+                        <option value = "Vegetables">Vegetables</option>
+                        <option value = "Soups">Soups</option>
+                    </select><br><br>
+                    
+                <label for = "gainCalories" class = "boxround">GAIN CALORIES :</label>  
+                <!-- <h2 class = "boxround">GAIN CALORIES</h2> -->
+                <input type = "number" id = "gainCalories" class = "setting"><br><br>
+
+                <label for = "exerciseDone">EXERCISE DONE:</label>
+                <select id ="exerciseSelect" class = "setting box">
+                    <option value = "cycling">Cycling</option>
+                    <option value = "walking">Walking</option>
+                    <option value = "weightlifting">Weight Lifting</option>
+                    <option value = "yoga">Yoga</option>
+                    <option value = "running">Running</option>
+                </select> <br><br>
+                <label for = "lossCalories">LOSS CALORIES:</label> 
+                <input type = "number" id = "lossCalories" class = "sett2"><br><br> 
+
+                <label for = "totalCalories">TOTAL CALORIES SPENT:</label>
+                <input type = "number" id = "totalSpent"><br><br>
+                <p id ="message" class = "items"></p>
+
+                <button onclick = "findCalories()" class = "find box">FIND CALORIES</button>
+          </div>
+     <script src = "script.js"></script>
+    </body>
+</html>
